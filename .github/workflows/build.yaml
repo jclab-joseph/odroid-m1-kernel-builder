@@ -20,5 +20,5 @@ jobs:
           outputs: type=local,dest=output
       - uses: actions/upload-artifact@v3
         with:
-          files: |
+          path: |
             output/*

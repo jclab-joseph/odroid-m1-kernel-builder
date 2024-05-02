@@ -12,9 +12,9 @@ RUN update-alternatives --install ~/python python /usr/bin/python3 1
 
 RUN cd /tmp && \
     mkdir -p /opt/toolchains && \
-    wget https://releases.linaro.org/components/toolchain/binaries/7.4-2019.02/aarch64-linux-gnu/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz && \
-    tar xvf gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz -C /opt/toolchains && \
-    rm gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz
+    wget https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/aarch64-linux-gnu/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz && \
+     tar xvf gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz -C /opt/toolchains && \
+    rm gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz
 
 RUN useradd -m -s /bin/bash build
 

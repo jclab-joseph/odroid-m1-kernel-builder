@@ -20,7 +20,7 @@ RUN useradd -m -s /bin/bash build
 USER build
 
 RUN cd /home/build && \
-    git clone --depth 1 https://github.com/hardkernel/linux.git -b odroidm1-4.19.y
+    git clone --depth 1 https://github.com/hardkernel/linux.git -b odroidm1-5.10.y
 
 COPY [ "prepare.sh", "/tmp/prepare.sh" ]
 RUN cat /tmp/prepare.sh >> ~/.bashrc

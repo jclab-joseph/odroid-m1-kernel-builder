@@ -5,7 +5,8 @@ RUN apt-get update -y && \
     git lzop build-essential gcc bc libncurses5-dev libc6-i386 lib32stdc++6 zlib1g \
     wget python3 python-is-python3 \
     flex bison bc fakeroot devscripts \
-    kmod cpio libelf-dev libssl-dev
+    kmod cpio libelf-dev libssl-dev \
+    rsync
 
 RUN update-alternatives --install ~/python python /usr/bin/python3 1
 
